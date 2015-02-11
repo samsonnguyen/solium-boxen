@@ -1,6 +1,7 @@
 require boxen::environment
 require homebrew
 require gcc
+include solium::environment
 
 Exec {
   group       => 'staff',
