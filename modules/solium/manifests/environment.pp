@@ -6,4 +6,5 @@ class solium::environment {
   include iterm2::dev
   include iterm2::colors::solarized_dark
   include solium::ant
+  include hipchat
 }
