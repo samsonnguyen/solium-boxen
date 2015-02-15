@@ -7,5 +7,6 @@ class solium::environment {
   ## Install Solium specific manifests
   include solium::bash-completion
   include solium::ant
+  include solium::weblogic
   # include solium::winfile
 }
