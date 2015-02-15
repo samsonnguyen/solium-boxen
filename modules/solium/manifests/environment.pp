@@ -8,5 +8,6 @@ class solium::environment {
   include solium::bash-completion
   include solium::ant
   include solium::weblogic
+  include solium::sqldeveloper
   # include solium::winfile
 }
