@@ -1,30 +1,26 @@
-class solium::weblogic {
+class solium::weblogic ($version,$url,$install_dir) {
   include wget
 
-  $weblogic_version    = "10.3.6.0.6"
-  $weblogic_install_dir = "/opt/java/oracle/weblogic/"
-  $weblogic_url        = "https://sharkcage.solium.com/vagrant-files/wls1036_dev_w_nativeio.zip"
-
   exec { 'retrieve_weblogic':
-    command => "wget ${weblogic_url} -O /tmp/wls_${weblogic_version}.zip",
-    creates => "/tmp/wls_${weblogic_version}.zip",
+    command => "wget ${url} -O /tmp/wls_${version}.zip",
+    creates => "/tmp/wls_${version}.zip",
     require => Package['wget'],
-    unless => "test -d /tmp/wls_${weblogic_version}.zip",
+    unless => "test -d /tmp/wls_${version}.zip",
   }
   
-  file { "${weblogic_install_dir}${weblogic_version}":
+  file { "${install_dir}${version}":
     ensure => "directory",
     require => Exec['retrieve_weblogic']
   }
 
   exec { 'install_weblogic' :
-    command => "unzip -o /tmp/wls_${weblogic_version}.zip -d ${weblogic_install_dir}${weblogic_version}",
+    command => "unzip -o /tmp/wls_${version}.zip -d ${install_dir}${version}",
     require => Exec["retrieve_weblogic"],
-    onlyif => "test -d ${weblogic_install_dir}${weblogic_version}",
+    onlyif => "test -d ${install_dir}${version}",
   }
 
   exec { 'create_symlink' :
-    command => "ln -sfn ${weblogic_install_dir}${weblogic_version} ${weblogic_install_dir}/10.3.6",
+    command => "ln -sfn ${install_dir}${version} ${install_dir}/10.3.6",
     require => Exec['install_weblogic']
   } 
 
