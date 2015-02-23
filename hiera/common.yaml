@@ -1,0 +1,5 @@
+---
+
+solium::weblogic::version: "10.3.6.0.6"
+solium::weblogic::url: "http://sharkcage.solium.com/vagrant-files/wls1036_dev_w_nativeio.zip"
+solium::weblogic::install_dir: "/opt/java/oracle/weblogic/"
