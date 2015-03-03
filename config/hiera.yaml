@@ -8,11 +8,19 @@
 # them in hiera/{github_login}.yaml
 
 :backends:
+  - eyaml
   - yaml
 :yaml:
   :datadir: "%{::boxen_home}/repo/hiera"
+:eyaml:
+  :datadir: "%{::boxen_home}/repo/hiera"
+
+  # If using the pkcs7 encryptor (default)
+  :pkcs7_private_key: "%{::boxen_home}/keys/private_key.pkcs7.pem"
+  :pkcs7_public_key:  "%{::boxen_home}/keys/public_key.pkcs7.pem"
+
 :hierarchy:
-  - "users/%{github_login}"
+  - "users/%{::github_login}"
   - common
 
 # Many modules make their own hiera data available through the use of
