@@ -59,6 +59,10 @@ github "sudo",        "1.0.0"
 github "xquartz",     "1.2.1"
 github "iterm2",       "1.2.4"
 github "hipchat"
+github "wget"
+
+forge "https://forge.puppetlabs.com"
+mod    'puppetlabs-vcsrepo'
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.

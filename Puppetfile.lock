@@ -1,3 +1,8 @@
+FORGE
+  remote: https://forge.puppetlabs.com
+  specs:
+    puppetlabs-vcsrepo (1.2.0)
+
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
@@ -94,6 +99,11 @@ GITHUBTARBALL
     sudo (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-wget
+  specs:
+    wget (1.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
     xquartz (1.2.1)
@@ -132,9 +142,11 @@ DEPENDENCIES
   openssl (= 1.0.0)
   phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
+  puppetlabs-vcsrepo (>= 0)
   repository (= 2.3.0)
   ruby (= 8.1.7)
   stdlib (= 4.2.1)
   sudo (= 1.0.0)
+  wget (>= 0)
   xquartz (= 1.2.1)
 
