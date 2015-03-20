@@ -123,7 +123,13 @@ GITHUBTARBALL
   specs:
     module_data (0.0.3)
 
+GITHUBTARBALL
+  remote: samsonnguyen/puppet-ant
+  specs:
+    ant (1.0.0)
+
 DEPENDENCIES
+  ant (= 1.0.0)
   boxen (= 3.10.2)
   brewcask (= 0.0.6)
   dnsmasq (= 2.0.1)

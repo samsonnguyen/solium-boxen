@@ -6,7 +6,8 @@ class solium::environment {
 
   ## http://stackoverflow.com/questions/25790909/how-do-i-configure-boxen-and-rbenv-with-rubymine
   exec { 'link_rbenv':
-    command => 'ln -s /opt/boxen/rbenv/ ~/.rbenv'
+    command => 'ln -s /opt/boxen/rbenv/ /Users/${::boxen_user}/.rbenv',
+    unless => "test -d /Users/${::boxen_user}/.rbenv"
   }
 
   ## homebrew packages
@@ -15,7 +16,8 @@ class solium::environment {
 
   ## Install Solium specific manifests
   include solium::bash-completion
-  include solium::ant
+  include ant
+  #include solium::ant
   include solium::weblogic
   include solium::shareworks
   include solium::sqldeveloper
