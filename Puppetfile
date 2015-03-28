@@ -57,9 +57,13 @@ github "ruby",        "8.1.7"
 github "stdlib",      "4.2.1", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",        "1.0.0"
 github "xquartz",     "1.2.1"
+
+
+## Solium modules
 github "iterm2",       "1.2.4"
 github "hipchat"
 github "wget"
+github "ant",         "1.0.0", :repo => "samsonnguyen/puppet-ant"
 
 forge "https://forge.puppetlabs.com"
 mod    'puppetlabs-vcsrepo'
