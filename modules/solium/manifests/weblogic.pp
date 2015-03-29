@@ -9,7 +9,9 @@ class solium::weblogic ($version,$url,$install_dir) {
   }
   
   file { "${install_dir}${version}":
-    ensure => "directory",
+    ensure  => "directory",
+    recurse => true,
+    recurselimit => 2,
     require => Exec['retrieve_weblogic']
   }
 

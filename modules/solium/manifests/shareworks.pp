@@ -19,7 +19,9 @@ class solium::shareworks($user = "${::boxen_user}",
            "${home}/dev/${branches[1]['name']}/solium",
            "${home}/dev/${branches[2]['name']}/solium" 
          ]:
-    ensure => directory,
+    ensure       => directory,
+    recurse      => true,
+    recurselimit => 2,
   }
 
   vcsrepo {
