@@ -60,10 +60,13 @@ github "xquartz",     "1.2.1"
 
 
 ## Solium modules
-github "iterm2",       "1.2.4"
+github "iterm2",      "1.2.4"
 github "hipchat"
 github "wget"
 github "ant",         "1.0.0", :repo => "samsonnguyen/puppet-ant"
+github "jenv",        "1.0.1", :repo => "samsonnguyen/puppet-jenv"
+github "java6",       "1.0.1", :repo => "samsonnguyen/puppet-java6"
+github "java7",       "1.0.0", :repo => "samsonnguyen/puppet-java7"
 
 forge "https://forge.puppetlabs.com"
 mod    'puppetlabs-vcsrepo'

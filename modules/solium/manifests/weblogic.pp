@@ -1,17 +1,23 @@
 class solium::weblogic ($version,$url,$install_dir) {
   include wget
 
+  notify { 'Downloading Weblogic. This may take a while':
+    before => Exec['retrieve_weblogic'],
+  }
+
   exec { 'retrieve_weblogic':
     command => "wget ${url} -O /tmp/wls_${version}.zip",
     creates => "/tmp/wls_${version}.zip",
     require => Package['wget'],
-    unless => "test -d /tmp/wls_${version}.zip",
+    unless  => "test -d /tmp/wls_${version}.zip",
+    timeout => 3600,
   }
   
-  file { "${install_dir}${version}":
+  file { ["/opt/java","/opt/java/oracle/","/opt/java/oracle/weblogic/","${install_dir}${version}"]:
     ensure  => "directory",
-    recurse => true,
-    recurselimit => 2,
+    owner   => "${::boxen_user}",
+    group   => "staff",
+    mode    => 0775,
     require => Exec['retrieve_weblogic']
   }
 
