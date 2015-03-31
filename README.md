@@ -101,7 +101,11 @@ Accept the certificate
 ## 9. Try running boxen again ##
 
     $ cd /opt/boxen/repo
-    $ ./script/boxen     ## This might take a while..
+    $ ./script/boxen     ## This might take a while.
+
+## 10. Load Boxens environment ##
+
+    $ /opt/boxen/env.sh
 
 # Common Problems #
 
