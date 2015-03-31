@@ -70,6 +70,7 @@ github "java7",       "1.0.0", :repo => "samsonnguyen/puppet-java7"
 github "evernote"
 github "textmate"
 github "sublime_text"
+github "intellij"
 
 forge "https://forge.puppetlabs.com"
 mod    'puppetlabs-vcsrepo'

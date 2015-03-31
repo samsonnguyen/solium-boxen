@@ -4,6 +4,11 @@ class solium::environment {
   include iterm2::colors::solarized_dark
   include hipchat
 
+  class { 'intellij':
+    edition => 'ultimate',
+    version => '14.1'
+  }
+
   ## http://stackoverflow.com/questions/25790909/how-do-i-configure-boxen-and-rbenv-with-rubymine
   exec { 'link_rbenv':
     command => "ln -s /opt/boxen/rbenv/ /Users/${::boxen_user}/.rbenv",
