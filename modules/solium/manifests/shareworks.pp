@@ -14,16 +14,19 @@ class solium::shareworks($user     = "${::boxen_user}",
                   'sw_branch' => 'shareworks-5_23_br' },
                 { 'name'      => 'solium-branch3',
                   'sw_branch' => 'shareworks-5_24_br' } ]
-  
-  file { [ "${home}/dev/${branches[0]['name']}/solium",
+ 
+  file { [ 
+           "${home}/dev",
+           "${home}/dev/${branches[0]['name']}",
+           "${home}/dev/${branches[1]['name']}",
+           "${home}/dev/${branches[2]['name']}",
+           "${home}/dev/${branches[0]['name']}/solium",
            "${home}/dev/${branches[1]['name']}/solium",
            "${home}/dev/${branches[2]['name']}/solium" 
          ]:
     ensure       => directory,
-    recurse      => true,
     owner        => "${::boxen_user}",
     group        => "staff",
-    recurselimit => 2,
   }
 
   vcsrepo {
