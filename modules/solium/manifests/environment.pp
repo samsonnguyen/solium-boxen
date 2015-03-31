@@ -21,7 +21,7 @@ class solium::environment {
   include java6
   include java7
   include solium::weblogic
-  #include solium::shareworks
+  include solium::shareworks
   include solium::sqldeveloper
   # include solium::winfile
 }
