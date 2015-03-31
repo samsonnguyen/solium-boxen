@@ -9,11 +9,11 @@ class solium::shareworks($user     = "${::boxen_user}",
 
   $home = "/Users/${user}"
   $branches = [ { 'name'      => 'solium-branch1',
-                  'sw_branch' => 'shareworks-5_21_br' },
-                { 'name'      => 'solium-branch2',
                   'sw_branch' => 'shareworks-5_22_br' },
+                { 'name'      => 'solium-branch2',
+                  'sw_branch' => 'shareworks-5_23_br' },
                 { 'name'      => 'solium-branch3',
-                  'sw_branch' => 'shareworks-5_23_br' } ]
+                  'sw_branch' => 'shareworks-5_24_br' } ]
   
   file { [ "${home}/dev/${branches[0]['name']}/solium",
            "${home}/dev/${branches[1]['name']}/solium",
