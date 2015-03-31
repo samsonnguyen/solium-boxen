@@ -20,9 +20,8 @@ class solium::environment {
   include jenv
   include java6
   include java7
-  #include solium::ant
   include solium::weblogic
-#  include solium::shareworks
+  #include solium::shareworks
   include solium::sqldeveloper
   # include solium::winfile
 }
