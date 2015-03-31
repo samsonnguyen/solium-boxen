@@ -67,6 +67,9 @@ github "ant",         "1.0.0", :repo => "samsonnguyen/puppet-ant"
 github "jenv",        "1.0.1", :repo => "samsonnguyen/puppet-jenv"
 github "java6",       "1.0.1", :repo => "samsonnguyen/puppet-java6"
 github "java7",       "1.0.0", :repo => "samsonnguyen/puppet-java7"
+github "evernote"
+github "textmate"
+github "sublime_text"
 
 forge "https://forge.puppetlabs.com"
 mod    'puppetlabs-vcsrepo'
