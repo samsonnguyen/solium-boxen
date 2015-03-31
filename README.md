@@ -104,9 +104,10 @@ Error:
 
 `Server certificate verification failed: issuer is not trusted (https://svn.solium.com)`
 
-Run this command:
+Run these command:
 
-`svn list https://svn.solium.com/svn/shareworks/branches`
+    $ sudo su -
+    $ /usr/bin/svn --username <<username>> --password <<password>> info https://svn.solium.com/svn/shareworks/branches
 
 and accept the SSL certificate permanently.  
 
