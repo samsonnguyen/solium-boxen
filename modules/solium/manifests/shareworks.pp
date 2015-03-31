@@ -2,9 +2,9 @@
 # Example:
 #  /opt/boxen/repo/hiera/users/samsonnguyen.eyaml
 
-class solium::shareworks($user = "${::boxen_user}",
-                         $password,
-                         $host = "https://svn.solium.com/svn/shareworks/branches/") {
+class solium::shareworks($user     = "${::boxen_user}",
+                         $password = "",
+                         $host     = "https://svn.solium.com/svn/shareworks/branches/") {
   include wget
 
   $home = "/Users/${user}"
