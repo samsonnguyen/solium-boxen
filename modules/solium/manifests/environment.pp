@@ -3,6 +3,7 @@ class solium::environment {
   include iterm2::dev
   include iterm2::colors::solarized_dark
   include hipchat
+  include virtualbox
 
   class { 'intellij':
     edition => 'ultimate',
