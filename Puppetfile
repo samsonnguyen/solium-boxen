@@ -71,6 +71,8 @@ github "evernote"
 github "textmate"
 github "sublime_text"
 github "intellij"
+github "sublime_text"
+github "virtualbox", "1.0.13"
 
 forge "https://forge.puppetlabs.com"
 mod    'puppetlabs-vcsrepo'
