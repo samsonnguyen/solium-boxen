@@ -73,6 +73,8 @@ github "sublime_text"
 github "intellij"
 github "sublime_text"
 github "virtualbox", "1.0.13"
+github "onepassword"
+github "dropbox"
 
 forge "https://forge.puppetlabs.com"
 mod    'puppetlabs-vcsrepo'
