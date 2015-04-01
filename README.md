@@ -55,7 +55,7 @@ The first time boxen/puppet will fail while checking out shareworks! This is nor
       [hiera-eyaml-core] Created key directory: ./keys
       [hiera-eyaml-core] Keys created OK
     
-    KEY THESE KEYS SAFE!
+    KEEP THESE KEYS SAFE!
 
 ## 6. Now lets encrypt our active-directory password so that we can add it into configuration file ##
 
@@ -101,7 +101,11 @@ Accept the certificate
 ## 9. Try running boxen again ##
 
     $ cd /opt/boxen/repo
-    $ ./script/boxen     ## This might take a while..
+    $ ./script/boxen     ## This might take a while.
+
+## 10. Load Boxens environment ##
+
+    $ /opt/boxen/env.sh
 
 # Common Problems #
 
