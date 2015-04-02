@@ -8,5 +8,10 @@ class solium::sqldeveloper {
     provider => 'compressed_app',
     source   => "https://sharkcage.solium.com/vagrant-files/sqldeveloper-${version}-macosx.app.zip"
   }
-  
+
+  package { "tnsnames-0.0.1.pkg":
+    ensure => installed,
+    provider => pkgdmg,
+    source => "https://sharkcage.solium.com/vagrant-files/tnsnames-0.0.1.pkg"
+  }    
 }
