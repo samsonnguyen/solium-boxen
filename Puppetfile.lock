@@ -3,6 +3,13 @@ FORGE
   specs:
     puppetlabs-vcsrepo (1.2.0)
 
+GIT
+  remote: https://github.com/samsonnguyen/puppet-solium.git
+  ref: master
+  sha: 9d30c2678a18b9df1d5f8f17d230f1bec81ca5ac
+  specs:
+    puppetlabs-solium (0.0.1)
+
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
@@ -149,16 +156,6 @@ GITHUBTARBALL
     ant (1.0.0)
 
 GITHUBTARBALL
-  remote: samsonnguyen/puppet-java6
-  specs:
-    java6 (1.0.1)
-
-GITHUBTARBALL
-  remote: samsonnguyen/puppet-java7
-  specs:
-    java7 (1.0.0)
-
-GITHUBTARBALL
   remote: samsonnguyen/puppet-jenv
   specs:
     jenv (1.0.1)
@@ -179,8 +176,6 @@ DEPENDENCIES
   inifile (= 1.1.1)
   intellij (>= 0)
   iterm2 (= 1.2.4)
-  java6 (= 1.0.1)
-  java7 (= 1.0.0)
   jenv (= 1.0.1)
   module_data (= 0.0.3)
   nginx (= 1.4.4)
@@ -188,6 +183,7 @@ DEPENDENCIES
   openssl (= 1.0.0)
   phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
+  puppetlabs-solium (>= 0)
   puppetlabs-vcsrepo (>= 0)
   repository (= 2.3.0)
   ruby (= 8.1.7)

@@ -1,5 +1,5 @@
 
-solium::shareworks::password: >
+solium::password: >
     ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAxggEhMIIBHQIBADAFMAACAQEw
     DQYJKoZIhvcNAQEBBQAEggEAXwS2wJh4tFIbEPc3tZtxX1f31urwwSneV0BD
     6yiBmgrw3peNItg1qpHmBl53pLFJqgnPNC9g+GmpcZswOC6b93GZjHQeiN1J

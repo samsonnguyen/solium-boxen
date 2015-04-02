@@ -59,25 +59,20 @@ github "sudo",        "1.0.0"
 github "xquartz",     "1.2.1"
 
 
-## Solium modules
-github "iterm2",      "1.2.4"
-github "hipchat"
-github "wget"
-github "ant",         "1.0.0", :repo => "samsonnguyen/puppet-ant"
-github "jenv",        "1.0.1", :repo => "samsonnguyen/puppet-jenv"
-github "java6",       "1.0.1", :repo => "samsonnguyen/puppet-java6"
-github "java7",       "1.0.0", :repo => "samsonnguyen/puppet-java7"
-github "evernote"
-github "textmate"
-github "sublime_text"
-github "intellij"
-github "sublime_text"
-github "virtualbox", "1.0.13"
-github "onepassword"
-github "dropbox"
-
 forge "https://forge.puppetlabs.com"
 mod    'puppetlabs-vcsrepo'
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+github "iterm2",      "1.2.4"
+github "hipchat"
+github "wget"
+github "ant",         "1.0.0", :repo => "samsonnguyen/puppet-ant"
+github "jenv",        "1.0.1", :repo => "samsonnguyen/puppet-jenv"
+github "evernote"
+github "textmate"
+github "sublime_text"
+github "intellij"
+#dev 'solium'
+mod 'puppetlabs-solium',
+  :git => "https://github.com/samsonnguyen/puppet-solium.git"

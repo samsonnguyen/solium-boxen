@@ -107,6 +107,11 @@ Accept the certificate
 
     $ /opt/boxen/env.sh
 
+Additionally,
+Add the following line at the end of your .bash_profile
+
+`source /opt/boxen/env.sh`
+
 # Common Problems #
 
 Error:  
@@ -119,4 +124,12 @@ Run these command:
     $ /usr/bin/svn --username <<username>> --password <<password>> info https://svn.solium.com/svn/shareworks/branches
 
 and accept the SSL certificate permanently.  
+
+
+## Other setup ##
+
+* Install jenv Intellij plugin
+* Install jenv ant plugin
+
+    `jenv enable-plugin maven`
 
