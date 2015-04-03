@@ -61,6 +61,6 @@ github "xquartz",     "1.2.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
-dev 'solium'
-#mod 'puppetlabs-solium',
-#  :git => "https://github.com/samsonnguyen/puppet-solium.git"
+#dev 'solium'
+mod 'puppetlabs-solium',
+  :git => "https://github.com/samsonnguyen/puppet-solium.git"
