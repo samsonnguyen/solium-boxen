@@ -64,6 +64,6 @@ github "xquartz",     "1.2.1"
 github "evernote"
 github "textmate"
 github "sublime_text"
-dev 'solium'
-#mod 'puppetlabs-solium',
-#  :git => "https://github.com/samsonnguyen/puppet-solium.git"
+#dev 'solium'
+mod 'puppetlabs-solium',
+  :git => "https://github.com/samsonnguyen/puppet-solium.git"
