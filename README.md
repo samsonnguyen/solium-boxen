@@ -25,6 +25,7 @@ finally,
 
 * Have a github account
 * Junos pulse (VPN access)
+* Setup SSH keys for git.solium.com
 * Xcode command line tools
 
 `$ xcode-select --install`
@@ -103,15 +104,6 @@ Accept the certificate
     $ cd /opt/boxen/repo
     $ ./script/boxen     ## This might take a while.
 
-## 10. Load Boxens environment ##
-
-    $ /opt/boxen/env.sh
-
-Additionally,
-Add the following line at the end of your .bash_profile
-
-`source /opt/boxen/env.sh`
-
 # Common Problems #
 
 Error:  
@@ -124,12 +116,4 @@ Run these command:
     $ /usr/bin/svn --username <<username>> --password <<password>> info https://svn.solium.com/svn/shareworks/branches
 
 and accept the SSL certificate permanently.  
-
-
-## Other setup ##
-
-* Install jenv Intellij plugin
-* Install jenv ant plugin
-
-    `jenv enable-plugin maven`
 
