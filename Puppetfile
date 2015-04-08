@@ -66,4 +66,4 @@ github "textmate"
 github "sublime_text"
 #dev 'solium'
 mod 'puppetlabs-solium',
-  :git => "https://github.com/samsonnguyen/puppet-solium.git"
+  :git => "ssh://git@git.solium.com/live/puppet-solium.git" 
